@@ -1,1 +1,55 @@
-Algorithms
+##### Calculating a tip #####
+DEF TIP(bill)
+   RETURN (bill * 0.1) * 2
+END DEF
+
+##### Determining what to wear #####
+DEF WHAT_TO_WEAR(Day_of_the_week)
+  SET Item_Count to 1
+  SET Item_Selected to nil
+  SET Weekday to Mon, Tues, Wed, Thurs, Fri
+  
+  DEF OPEN_DRAWER(Drawer_number)
+    RETURN Items in Drawer_number
+  END DEF
+
+  DEF FIND_ITEM
+    WHILE Item_Selected EQUALS nil AND Item_Count <= Items LENGTH
+      FOR each Item in Items
+        IF Item_Count EQUALS Items LENGTH
+          Item_Selected to Item
+          RETURN Item_Selected        
+        ELSE Item.status EQUALS clean
+          Item_Seletced to Item
+          RETURN Item_Selected
+        ELSE
+          INCREMENT Item_Count
+        ENDIF
+      ENDFOR
+    ENDWHILE
+  END DEF
+
+  IF Day_of_the_week EQUALS Weekday THEN
+    RUN OPEN_DRAWER(1)
+    RUN FIND_ITEM
+  ELSE
+    RUN OPEN_DRAWER(2)
+    RUN FIND_ITEM
+  ENDIF
+
+END DEF
+
+##### Getting to work #####
+DEF GET_TO_WORK
+  SET Work to work address
+  SET Home_Bus_Stop to address at bus stop 28 
+  SET Work_Bus_Stop to address at bus stop 57
+
+  WALK(Home_Bus_Stop)
+  BUS(On)
+
+  IF current Bus_Stop >= Work_Bus_Stop THEN
+    BUS(Off)
+    WALK(Work)
+  ENDIF
+END DEF
