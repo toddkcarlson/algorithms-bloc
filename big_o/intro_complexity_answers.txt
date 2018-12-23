@@ -1,0 +1,23 @@
+1) An algorithm that has O(1) is a race car and an algorithm that has O(2n) is a wagon.
+2) The best case scenario for binary search is when the first element tried is the matching element.
+3) The worse case scenario for binary search is when the last element tried is the matching element.
+4) The bounded-case case scenario for binary search is when the matching element is found between the first and last possible element.
+5) https://docs.google.com/spreadsheets/d/1YbRsfwrZ_oIVbTRfTa3LahSr80p0ARR_RzWrmigSklk/edit?usp=sharing
+6) The limit is also infinity
+7) O(2n)
+8)
+n number of iterations
+1  1
+2  2
+3  3
+4  4
+5  5
+6  6
+7  7
+8  8
+9  9
+10 10
+9) https://docs.google.com/spreadsheets/d/1TejxpXeviAB7STRIZAWhb10VcuBudW95W7_DYp5SHyA/edit?usp=sharing
+10) O(log n)
+11) O(1)
+12) O(log n)
