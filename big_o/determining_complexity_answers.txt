@@ -1,0 +1,6 @@
+1) Constant Time Complexity: O(1) This algorithm will always takes the same amount of time to execute.
+2) Linear Time Complexity: O(n) Iterating over the collection will increase the time needed to excute the algorithm at the same rate as the number of elements increases.
+3) Quadratic Time Complexity: O(n^2) Since this has a nested array the time needed is the square of the number of elements.
+4) Exponential Time Complexity: O(2^n) Since there are two recursive functions in this algorithm the time needed doubles with each additon element.
+5) Constant Time Complexity: O(1) This algorithm will always takes the same amount of time to execute.
+6) Logarithmic Time Complexity: O(log n) This appears to be a quicksort which has a big-0 of 0(log n). This algorithm will grow in the time needed to excute by one as the number of elements increases.
