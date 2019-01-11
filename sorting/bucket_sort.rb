@@ -15,7 +15,7 @@ def bucket_sort(collection)
     buckets[x[0].ord - "A".ord] << x
   end 
   
- buckets.map! { |x| heap_sort(x) }
+ buckets.map! { |x| quick_sort(x) }
 
  buckets.flatten
 
